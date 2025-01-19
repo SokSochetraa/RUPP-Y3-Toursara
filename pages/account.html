@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toursara</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo.svg"
+      type="image/x-icon"
+    />
+
+    <!--Css-->
+    <link rel="stylesheet" href="../assets/styles/account_style.css" />
+    <!-- Font Awsome -->
+    <script
+      src="https://kit.fontawesome.com/3e6d836b0b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Script-->
+    <script src="../assets/scripts/account_script.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <nav class="nav-header">
+        <div class="nav-left">
+          <a href="#"
+            ><img class="icon" src="../assets/images/logo.svg" alt="Tourasa"
+          /></a>
+        </div>
+        <button onclick="location.href='#'" class="get-start">Get Start</button>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <section class="username-email">
+      <div class="user-container">
+        <div class="user-profile">
+          <nav class="pf-border">
+            <img src="../../assets/images/place1.jpg" alt="John Wick" />
+          </nav>
+          <div class="btn-edit-pf">
+            <i class="fa-solid fa-pen"></i>
+          </div>
+        </div>
+        <h5>John Wick</h5>
+        <p>wicksmosboii@something.com</p>
+      </div>
+      <div class="history-container"></div>
+    </section>
+    <section class="menu-section">
+
+      <!--Seclection LI-->
+      <nav class="menu-container">
+        <ul class="menu-list">
+          <li class="menu-item active">Account</li>
+          <span class="line"></span>
+          <li class="menu-item">History</li>
+          <span class="line"></span>
+          <li class="menu-item">Payment</li>
+          <span class="active-line"></span>
+        </ul>
+      </nav>
+      
+        <!--Account-->
+        <div class="menu-one-container menu-container-active">
+          <div class="menu-option-title">
+            <h1>Account</h1>
+          </div>
+          <div class="menu-option-title-info">
+            <nav class="option-info">
+              <div class="option-info-title">
+                <p>Name</p>
+                <h5 contenteditable="false">John</h5>
+              </div>
+              <div class="option-info-title-edit" onclick="toggleEdit(this)">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <p>Change</p>
+              </div>
+            </nav>
+            <nav class="option-info">
+              <div class="option-info-title">
+                <p>Email</p>
+                <h5 contenteditable="false">wicksmosboii@something.com</h5>
+              </div>
+              <div class="option-info-title-edit" onclick="toggleEdit(this)">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <p>Change</p>
+              </div>
+            </nav>
+            <nav class="option-info">
+              <div class="option-info-title">
+                <p>Phone Number</p>
+                <h5 contenteditable="false">+855 12345678</h5>
+              </div>
+              <div class="option-info-title-edit" onclick="toggleEdit(this)">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <p>Change</p>
+              </div>
+            </nav>
+            <nav class="option-info">
+              <div class="option-info-title">
+                <p>Date of Birth</p>
+                <h5 contenteditable="false">01/01/2000</h5>
+              </div>
+              <div class="option-info-title-edit" onclick="toggleEdit(this)">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <p>Change</p>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <!--History-->
+        <div class="menu-two-container ">
+          <div class="menu-option-title">
+            <h1>Tickets/Booking</h1>
+          </div>
+          <ul class="menu-list-two">
+            <li class="menu-item-two active">
+              <i class="fa-solid fa-bus"></i>
+              Bus
+            </li>
+            <span class="line"></span>
+            <li class="menu-item-two">
+              <i class="fa-solid fa-bed"></i>
+              Stays
+            </li>
+            <span class="active-line-two"></span>
+          </ul>
+          <nav class="menu-option-two-container">
+            <div class="menu-option-two">
+              <!--Bus-->
+              <nav class="option-two-info option-two-info-active">
+                <div class="option-two-info-left">
+                  <div class="ticket-card">
+                    <span>
+                      <img
+                        src="https://cdn.bookmebus.com/uploads/operator/logo/16/profile_Larryta.png"
+                        alt=""
+                      />
+                    </span>
+                    <nav class="ticket-date">
+                      <div class="ticket-start-date">
+                        <p>Phnom Penh</p>
+                        <h3>12:30 pm</h3>
+                      </div>
+                      <span><i class="fa-solid fa-minus"></i></span>
+                      <div class="ticket-end-date">
+                        <p>Banteay MeanChey</p>
+                        <h3>6:30 pm</h3>
+                      </div>
+                    </nav>
+                    <div class="line"></div>
+                    <div class="option-two-info-left-ticket-title">
+                      <nav class="ticket-left-calendar-seats">
+                        <div class="ticket-left-calendar">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Date</p>
+                            <h3>19 / 12 /2024</h3>
+                          </div>
+                        </div>
+                        <div class="ticket-left-seat">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-chair"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Seat no.</p>
+                            <h3>08 <b></b></h3>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="option-two-info-right">
+                      <a href="#">Download</a>
+                    </div>
+                  </div>
+                  <div class="ticket-card">
+                    <span>
+                      <img
+                        src="https://cdn.bookmebus.com/uploads/operator/logo/16/profile_Larryta.png"
+                        alt=""
+                      />
+                    </span>
+                    <nav class="ticket-date">
+                      <div class="ticket-start-date">
+                        <p>Phnom Penh</p>
+                        <h3>12:30 pm</h3>
+                      </div>
+                      <span><i class="fa-solid fa-minus"></i></span>
+                      <div class="ticket-end-date">
+                        <p>Banteay MeanChey</p>
+                        <h3>6:30 pm</h3>
+                      </div>
+                    </nav>
+                    <div class="line"></div>
+                    <div class="option-two-info-left-ticket-title">
+                      <nav class="ticket-left-calendar-seats">
+                        <div class="ticket-left-calendar">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Date</p>
+                            <h3>19 / 12 /2024</h3>
+                          </div>
+                        </div>
+                        <div class="ticket-left-seat">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-chair"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Seat no.</p>
+                            <h3>08 <b></b></h3>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="option-two-info-right">
+                      <a href="#">Download</a>
+                    </div>
+                  </div>
+                  <div class="ticket-card">
+                    <span>
+                      <img
+                        src="https://cdn.bookmebus.com/uploads/operator/logo/16/profile_Larryta.png"
+                        alt=""
+                      />
+                    </span>
+                    <nav class="ticket-date">
+                      <div class="ticket-start-date">
+                        <p>Phnom Penh</p>
+                        <h3>12:30 pm</h3>
+                      </div>
+                      <span><i class="fa-solid fa-minus"></i></span>
+                      <div class="ticket-end-date">
+                        <p>Banteay MeanChey</p>
+                        <h3>6:30 pm</h3>
+                      </div>
+                    </nav>
+                    <div class="line"></div>
+                    <div class="option-two-info-left-ticket-title">
+                      <nav class="ticket-left-calendar-seats">
+                        <div class="ticket-left-calendar">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Date</p>
+                            <h3>19 / 12 /2024</h3>
+                          </div>
+                        </div>
+                        <div class="ticket-left-seat">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-chair"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Seat no.</p>
+                            <h3>08 <b></b></h3>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="option-two-info-right">
+                      <a href="#">Download</a>
+                    </div>
+                  </div>
+                  
+              </nav>
+              <!--Stays-->
+              <nav class="option-two-info ">
+                <div class="option-two-info-left">
+                  <div class="ticket-card">
+                    <span>
+                      <img
+                        src="https://newsroom.hyatt.com/image/Hyatt+Regency+Logo+Hi+Res+Thumbnail.jpg"
+                        alt=""
+                      />
+                    </span>
+                    <nav class="ticket-date">
+                      <div class="ticket-start-date">
+                        <p>Check In</p>
+                        <h3>Saturday,Jan 13</h3>
+                      </div>
+                      <span><i class="fa-solid fa-minus"></i></span>
+                      <div class="ticket-end-date">
+                        <p>Check Out</p>
+                        <h3>Sunday,Jan 14</h3>
+                      </div>
+                    </nav>
+                    <div class="line"></div>
+                    <div class="option-two-info-left-ticket-title">
+                      <nav class="ticket-left-calendar-seats">
+                        <div class="ticket-left-calendar">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-clock"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Time Check in</p>
+                            <h3>19:00 PM</h3>
+                          </div>
+                        </div>
+                        <div class="ticket-left-seat">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-door-closed"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Room no.</p>
+                            <h3>168A</h3>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="option-two-info-right">
+                      <a href="#">Download</a>
+                    </div>
+                  </div>
+                  <div class="ticket-card">
+                    <span>
+                      <img
+                        src="https://newsroom.hyatt.com/image/Hyatt+Regency+Logo+Hi+Res+Thumbnail.jpg"
+                        alt=""
+                      />
+                    </span>
+                    <nav class="ticket-date">
+                      <div class="ticket-start-date">
+                        <p>Check In</p>
+                        <h3>Saturday,Jan 13</h3>
+                      </div>
+                      <span><i class="fa-solid fa-minus"></i></span>
+                      <div class="ticket-end-date">
+                        <p>Check Out</p>
+                        <h3>Sunday,Jan 14</h3>
+                      </div>
+                    </nav>
+                    <div class="line"></div>
+                    <div class="option-two-info-left-ticket-title">
+                      <nav class="ticket-left-calendar-seats">
+                        <div class="ticket-left-calendar">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-clock"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Time Check in</p>
+                            <h3>19:00 PM</h3>
+                          </div>
+                        </div>
+                        <div class="ticket-left-seat">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-door-closed"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Room no.</p>
+                            <h3>168A</h3>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="option-two-info-right">
+                      <a href="#">Download</a>
+                    </div>
+                  </div>
+                  <div class="ticket-card">
+                    <span>
+                      <img
+                        src="https://newsroom.hyatt.com/image/Hyatt+Regency+Logo+Hi+Res+Thumbnail.jpg"
+                        alt=""
+                      />
+                    </span>
+                    <nav class="ticket-date">
+                      <div class="ticket-start-date">
+                        <p>Check In</p>
+                        <h3>Saturday,Jan 13</h3>
+                      </div>
+                      <span><i class="fa-solid fa-minus"></i></span>
+                      <div class="ticket-end-date">
+                        <p>Check Out</p>
+                        <h3>Sunday,Jan 14</h3>
+                      </div>
+                    </nav>
+                    <div class="line"></div>
+                    <div class="option-two-info-left-ticket-title">
+                      <nav class="ticket-left-calendar-seats">
+                        <div class="ticket-left-calendar">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-clock"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Time Check in</p>
+                            <h3>19:00 PM</h3>
+                          </div>
+                        </div>
+                        <div class="ticket-left-seat">
+                          <div class="left-ticket-date">
+                            <i class="fa-solid fa-door-closed"></i>
+                          </div>
+                          <div class="ticket-end-date">
+                            <p>Room no.</p>
+                            <h3>168A</h3>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="option-two-info-right">
+                      <a href="#">Download</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </nav>
+        </div>
+
+        <!--Payment-->
+        <div class="menu-three-container ">
+          <div class="menu-option-title">
+            <h1>Payment methods</h1>
+          </div>
+          <nav class="card-payment-container">
+            <div class="card-payment">
+              <div class="card-payment-top">
+                <div class="top-left">
+                  <div class="top-left-1">
+                    <p>**** **** ****</p>
+                    <h2>4399</h2>
+                  </div>
+                  <div class="top-left-2">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+                <div class="butt-left">
+                  <div class="butt-left-1">
+                    <p>Valid Thru</p>
+                    <h2>27 / 40</h2>
+                  </div>
+                  <div class="butt-left-2">
+                    <i class="fa-brands fa-cc-visa"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Add New Card-->
+            <div class="add-new-card">
+              <div class="new-card">
+                <i class="fa-solid fa-circle-plus"></i>
+                <p>Add new Card</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+    </section>
+
+     <!-- footer -->
+     <footer>
+      <div class="frame-comtainer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="logo">
+              <img
+                class="icon"
+                src="../assets/images/logo.svg"
+                alt="Toursara"
+              />
+              <p class="text-logo">Toursara</p>
+            </div>
+            <p>
+              We believe brand interaction is key in commu- <br />nication. Real
+              innovations and a positive.
+            </p>
+            <div class="icon-context">
+              <a class="icon" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="icon" href="#"> <i class="fa-brands fa-youtube"></i></a
+              ><a class="icon" href="#">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-mid">
+            <div class="items">
+              <p class="main-items">Home</p>
+              <p>Choose Location</p>
+              <p>Travel Information</p>
+            </div>
+            <div class="items">
+              <p class="main-items">About</p>
+              <p class="about">About Us</p>
+              <p>About Cambodia</p>
+            </div>
+            <div class="items">
+              <p class="main-items">Contact</p>
+              <p>Facebook</p>
+              <p>Telegram</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p class="get-in">Get in touch</p>
+
+            <form action="">
+              <input
+                name="email"
+                type="email"
+                placeholder="Your email here..."
+                required
+              />
+              <button type="submit" value="" class="get-access">
+                Get Access
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="line-didver"></div>
+          <div class="footer-end">
+            <p>Toursara © 2024 All Right Reserved</p>
+            <div>
+              <p>Terms of Service</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+  </body>
+</html>

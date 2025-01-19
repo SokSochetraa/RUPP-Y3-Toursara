@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Alata&family=Alatsi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.login-with {
+  margin-top: 21.25px;
+  width: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12.75px;
+}
+.login-with > .line {
+  height: 0.396px;
+  opacity: 0.25;
+  background: #000;
+  width: 127.5px;
+}
+.login-with > .text {
+  width: 98.125px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 11.3px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.title-befroe-form {
+  display: flex;
+  align-items: flex-end;
+  width: 425px;
+  gap: 8.5px;
+  padding: 8.5px;
+}
+.title-befroe-form > img {
+  width: 80.75px;
+}
+.title-befroe-form > h1 {
+  color: #000;
+  font-family: Agbalumo;
+  font-size: 54.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72.3px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 425px;
+  gap: 8.5px;
+  padding: 12.75px;
+}
+.title > h2 {
+  color: #000;
+  font-family: Alatsi;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.title > p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 13.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  z-index: 0;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25.5px;
+}
+.form-container > .login-wrapper > form {
+  display: flex;
+  height: 402.9px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 425px;
+  gap: 8.5px;
+}
+.form-container > .login-wrapper > form > .input-email,
+.form-container > .login-wrapper > form > .input-password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.25px;
+  padding: 0 12.75px;
+}
+.form-container > .login-wrapper > form > .input-email > span > i,
+.form-container > .login-wrapper > form > .input-password > span > i {
+  cursor: pointer;
+}
+.form-container > .login-wrapper > form > .input-email > label,
+.form-container > .login-wrapper > form > .input-password > label {
+  color: #000;
+  font-size: 13.6px;
+  font-style: normal;
+  font-weight: 500;
+}
+.form-container > .login-wrapper > form > .input-email > span,
+.form-container > .login-wrapper > form > .input-password > span {
+  display: flex;
+  width: 382.5px;
+  border-radius: 3.4px;
+  gap: 8.5px;
+  align-items: center;
+  border: #828282 0.85px solid;
+  padding: 0 8.5px;
+}
+.form-container > .login-wrapper > form > .input-email > span > input,
+.form-container > .login-wrapper > form > .input-password > span > input {
+  display: flex;
+  width: 100%;
+  height: 40.8px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.menu-after-form {
+  display: flex;
+  width: 382.5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.25px 12.75px;
+  margin-left: 8.5px;
+}
+.menu-after-form > .remember-me {
+  display: flex;
+  justify-content: center;
+  gap: 4.25px;
+}
+.menu-after-form > .remember-me > label {
+  color: #000;
+  font-size: 12.25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+.menu-after-form > .remember-me > input {
+  cursor: pointer;
+}
+.menu-after-form > .forgot-pass {
+  color: #fd8787;
+  font-family: Montserrat;
+  font-size: 12.25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+.btnSubmit,
+.btnSignUp {
+  margin-top: 10px;
+  width: 425px;
+  text-align: center;
+  line-height: 40.8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.6px;
+  font-weight: 500;
+  background-color: #f1a501;
+  cursor: pointer;
+}
+.do-not-have-an-accoount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 425px;
+  gap: 4.25px;
+  padding: 8.5px 12.75px;
+}
+.do-not-have-an-accoount > p {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12.25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.do-not-have-an-accoount > a {
+  color: #fd8787;
+  font-family: Montserrat;
+  font-size: 12.25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+.other-log-with {
+  width: 425px;
+  height: 63.75px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 17px;
+}
+.other-log-with > .card {
+  width: 127.5px;
+  height: 42.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #f1a501 0.85px solid;
+  border-radius: 3.4px;
+  cursor: pointer;
+}
+.other-log-with > .card > i {
+  font-size: 15.3px;
+}
+
+.form-container > .signup-wrapper > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 425px;
+  gap: 8.5px;
+}
+.input-wrapper > .input-email,
+.input-wrapper > .input-password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.25px;
+  padding: 0 12.75px;
+}
+.input-wrapper > .input-email > label,
+.input-wrapper > .input-password > label {
+  color: #000;
+
+  font-size: 13.6px;
+  font-style: normal;
+  font-weight: 500;
+}
+.input-wrapper > .input-email > span,
+.input-wrapper > .input-password > span {
+  display: flex;
+  width: 382.5px;
+  border-radius: 3.4px;
+  gap: 8.5px;
+  align-items: center;
+  border: #828282 0.85px solid;
+  padding: 0 8.5px;
+}
+.input-wrapper > .input-email > span > input,
+.input-wrapper > .input-password > span > input {
+  display: flex;
+  width: 100%;
+  height: 40.8px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8.5px;
+}
+.login-wrapper,
+.signup-wrapper {
+  height: 491.3px;
+}
+.login-disactive {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  margin-left: 925px;
+}
+.login-active {
+  display: block;
+  opacity: 1;
+}

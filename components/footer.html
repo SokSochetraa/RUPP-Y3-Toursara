@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer - Component</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo.svg"
+      type="image/x-icon"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Alatsi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+      * {
+        margin: 0;
+        font-family: "Poppins";
+        box-sizing: border-box;
+        border: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+      }
+
+      body {
+        scroll-behavior: smooth;
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+      }
+      .frame-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 95rem;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        padding: 2rem 1.32rem 3.56rem 1.32rem;
+      }
+      .footer-container > .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+      }
+      .footer-left > .logo {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      .logo > .icon {
+        width: 6.87rem;
+        height: 6.87rem;
+      }
+      .logo > .text-logo {
+        color: #000;
+        font-family: Agbalumo;
+        font-size: 4rem;
+        font-weight: 400;
+      }
+      .footer-left > p {
+        color: #666;
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+      }
+      .footer-left > .icon-context {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        width: 8.5rem;
+      }
+      .icon-context > .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.5remx;
+        color: gray;
+        font-size: 1.12rem;
+      }
+      .footer-mid {
+        display: flex;
+        width: 39rem;
+        padding-bottom: 2.12rem;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+      }
+      .footer-mid > .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 11.69rem;
+        gap: 1.5rem;
+      }
+      .items > .main-items {
+        color: #000;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+      }
+      .items > p {
+        color: #454545;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+      }
+      .footer-right {
+        width: 16.31rem;
+        height: 9.6rem;
+      }
+      .footer-right > .get-in {
+        color: #171717;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.12rem;
+        font-weight: 500;
+        line-height: 1.12rem;
+        padding-bottom: 1.75rem;
+      }
+      .footer-right > form > input {
+        padding: 1rem 0 1rem 1rem;
+        width: 16.3rem;
+        height: 3rem;
+        font-family: "Poppins", sans-serif;
+        background: rgb(138, 143, 151, 0.1);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 0.87rem;
+      }
+      .footer-right > form > .get-access {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 0.87rem;
+        font-family: "Poppins", sans-serif;
+        margin-top: 0.87rem;
+        width: 16.3rem;
+        height: 3rem;
+        background: var(--Primary, #f1a501);
+        cursor: pointer;
+      }
+      .footer-bottom {
+        padding: 3rem 1.31rem 0 1.31rem;
+      }
+      .line-didver {
+        width: 1398px;
+        height: 1px;
+        opacity: 0.2;
+        background: #666;
+      }
+      .footer-end {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 50px 0 40px 0;
+      }
+      .footer-end > p {
+        color: #666;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+      }
+      .footer-end > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 235.907px;
+        height: 14px;
+      }
+      .footer-end > div > p {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Footer -->
+    <footer>
+      <div class="frame-comtainer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="logo">
+              <img
+                class="icon"
+                src="../assets/images/logo.svg"
+                alt="Toursara"
+              />
+              <p class="text-logo">Toursara</p>
+            </div>
+            <p>
+              We believe brand interaction is key in commu- <br />nication. Real
+              innovations and a positive.
+            </p>
+            <div class="icon-context">
+              <a class="icon" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="icon" href="#"> <i class="fa-brands fa-youtube"></i></a
+              ><a class="icon" href="#">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-mid">
+            <div class="items">
+              <p class="main-items">Home</p>
+              <p>Choose Location</p>
+              <p>Travel Information</p>
+            </div>
+            <div class="items">
+              <p class="main-items">About</p>
+              <p class="about">About Us</p>
+              <p>About Cambodia</p>
+            </div>
+            <div class="items">
+              <p class="main-items">Contact</p>
+              <p>Facebook</p>
+              <p>Telegram</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p class="get-in">Get in touch</p>
+
+            <form action="">
+              <input
+                id="email"
+                type="email"
+                placeholder="Your email here..."
+                required
+              /><button type="submit" class="get-access">Get Access</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="line-didver"></div>
+          <div class="footer-end">
+            <p>Toursara © 2024 All Right Reserved</p>
+            <div>
+              <p>Terms of Service</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

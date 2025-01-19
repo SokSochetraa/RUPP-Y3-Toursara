@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toursara</title>
+    <link rel="stylesheet" href="../assets/styles/login_style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/b4f467bfb3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="login-container">
+        <div class="title-befroe-form">
+          <img src="../../assets/images/logo.svg" alt="Tourasa" />
+          <h1>Toursara</h1>
+        </div>
+        <div class="form-container">
+          <div class="login-wrapper login-active">
+            <div class="title">
+              <h2>Log in</h2>
+              <p>Login to access your Toursara account.</p>
+            </div>
+            <form action="">
+              <div class="input-email">
+                <label for="email">Email</label>
+                <span>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    id="email"
+                    value=""
+                    placeholder="Email"
+                  />
+                  <i class="fa-solid fa-user"></i>
+                </span>
+              </div>
+              <div class="input-password">
+                <label for="password">Password</label>
+                <span
+                  ><input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    value=""
+                    placeholder="Password" />
+                  <i class="fa-solid fa-eye-slash"></i
+                ></span>
+              </div>
+              <div class="menu-after-form">
+                <div class="remember-me">
+                  <input type="checkbox" name="remember" id="remember" />
+                  <label for="remember">Remember Me</label>
+                </div>
+                <span class="forgot-pass">Forgot Password</span>
+              </div>
+              <button class="btnSubmit" type="submit">Log In</button>
+              <span class="do-not-have-an-accoount">
+                <p>Don't have an accoount?</p>
+                <a id="signup">Sign up</a>
+              </span>
+            </form>
+          </div>
+          <div class="signup-wrapper login-disactive">
+            <div class="title">
+              <h2>Sign Up</h2>
+              <p>Create your Toursara account now.</p>
+            </div>
+            <form action="">
+              <div class="input-wrapper">
+                <div class="input-email">
+                  <label for="username">Username</label>
+                  <span>
+                    <input
+                      type="username"
+                      name="username"
+                      required
+                      id="username"
+                      value=""
+                      placeholder="Username"
+                    />
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                </div>
+                <div class="input-email">
+                  <label for="email">Email</label>
+                  <span>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      id="sign-email"
+                      value=""
+                      placeholder="Email"
+                    />
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                </div>
+                <div class="input-password">
+                  <label for="password">Password</label>
+                  <span
+                    ><input
+                      type="password"
+                      name="password"
+                      id="sign-password"
+                      required
+                      value=""
+                      placeholder="Password" />
+                    <i class="fa-solid fa-eye-slash"></i
+                  ></span>
+                </div>
+                <div class="input-password">
+                  <label for="confirm-password">Confirm Password</label>
+                  <span
+                    ><input
+                      type="password"
+                      name="confirm-password"
+                      id="confirm-password"
+                      required
+                      value=""
+                      placeholder="Confirm Password" />
+                    <i class="fa-solid fa-eye-slash"></i
+                  ></span>
+                </div>
+              </div>
+              <button class="btnSignUp" type="submit">Sign Up</button>
+              <span class="do-not-have-an-accoount">
+                <p>Already have an accoount?</p>
+                <a id="login">Log In</a>
+              </span>
+            </form>
+          </div>
+        </div>
+        <div class="login-with">
+          <div class="line"></div>
+          <p class="text">Or Continue with</p>
+          <div class="line"></div>
+        </div>
+        <div class="other-log-with">
+          <div class="card"><i class="fa-brands fa-facebook"></i></div>
+          <div class="card"><i class="fa-brands fa-google"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const loginForm = document.querySelector(".login-wrapper");
+      const signupForm = document.querySelector(".signup-wrapper");
+      const loginLink = document.getElementById("login");
+      const signupLink = document.getElementById("signup");
+      const signupButton = document.querySelector(".btnSignUp"); // Select the signup button
+      const passwordInput = document.getElementById("sign-password");
+      const confirmPasswordInput = document.getElementById("confirm-password");
+      const loginPasswordInput = document.getElementById("password");
+      const passwordToggle = document.querySelector("#sign-password + i"); // Eye icon for signup password
+      const confirmPasswordToggle = document.querySelector(
+        "#confirm-password + i"
+      ); // Eye icon for confirm password
+      const loginPasswordToggle = document.querySelector("#password + i"); // Eye icon for login password
+
+      loginLink.addEventListener("click", () => {
+        signupForm.classList.remove("login-active");
+        signupForm.classList.add("login-disactive");
+        loginForm.classList.remove("login-disactive");
+        loginForm.classList.add("login-active");
+      });
+
+      signupLink.addEventListener("click", () => {
+        loginForm.classList.remove("login-active");
+        loginForm.classList.add("login-disactive");
+        signupForm.classList.remove("login-disactive");
+        signupForm.classList.add("login-active");
+      });
+
+      // Password confirmation validation
+      signupButton.addEventListener("click", (e) => {
+        if (passwordInput.value !== confirmPasswordInput.value) {
+          e.preventDefault(); // Prevent form submission
+          alert("Passwords do not match. Please try again.");
+        } else {
+          alert("Sorry, we haven't make this full functionlities.yet");
+        }
+      });
+
+      // Toggle password visibility for signup password
+      passwordToggle.addEventListener("click", () => {
+        const type = passwordInput.type === "password" ? "text" : "password";
+        passwordInput.type = type;
+        passwordToggle.classList.toggle("fa-eye-slash");
+        passwordToggle.classList.toggle("fa-eye");
+      });
+
+      // Toggle password visibility for confirm password
+      confirmPasswordToggle.addEventListener("click", () => {
+        const type =
+          confirmPasswordInput.type === "password" ? "text" : "password";
+        confirmPasswordInput.type = type;
+        confirmPasswordToggle.classList.toggle("fa-eye-slash");
+        confirmPasswordToggle.classList.toggle("fa-eye");
+      });
+
+      // Toggle password visibility for login password
+      loginPasswordToggle.addEventListener("click", () => {
+        const type =
+          loginPasswordInput.type === "password" ? "text" : "password";
+        loginPasswordInput.type = type;
+        loginPasswordToggle.classList.toggle("fa-eye-slash");
+        loginPasswordToggle.classList.toggle("fa-eye");
+      });
+    </script>
+  </body>
+</html>

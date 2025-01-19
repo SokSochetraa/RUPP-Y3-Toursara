@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toursara</title>
+    <link rel="stylesheet" href="../assets/styles/explore_style.css" />
+  </head>
+  <body>
+    <!-- Header Video Section -->
+    <section class="section-one">
+      <video
+        muted
+        autoplay
+        loop
+        src="../assets/images/video_angkor.mp4"
+      ></video>
+      <h1>Toursara</h1>
+      <p>Explore throught the Kingdom of Wonders.</p>
+    </section>
+    <section class="section-title">
+      <div class="title">
+        <h1 class="section-two-title">Explore to the TOP Destination.</h1>
+      </div>
+    </section>
+    <section class="section-two">
+      <div class="destination-card">
+        <span>#TOP1</span>
+        <h4>Angkor Wat</h4>
+        <p>Siem Reap</p>
+      </div>
+      <div class="destination-card-type2">
+        <div class="group1">
+          <div class="destination-card2 card1">
+            <span>#TOP2</span>
+            <h4>Koh Rong</h4>
+            <p>Sihanoukville</p>
+          </div>
+          <div class="destination-card2 card2">
+            <span>#TOP3</span>
+            <h4>Wat Phnom</h4>
+            <p>Phnom Penh</p>
+          </div>
+        </div>
+        <div class="group2">
+          <div class="destination-card2 card3">
+            <span>#TOP4</span>
+            <h4>Tonle Sap</h4>
+            <p>Phuthisat</p>
+          </div>
+          <div class="destination-card2 card4">
+            <span>#TOP5</span>
+            <h4>Banteay Srey</h4>
+            <p>Siem Reap</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const desCard = document.querySelectorAll(
+        ".destination-card, .destination-card2"
+      );
+
+      desCard.forEach((card) => {
+        card.addEventListener("click", function () {
+          window.location.href = "place_detail.html";
+        });
+      });
+    </script>
+  </body>
+</html>
